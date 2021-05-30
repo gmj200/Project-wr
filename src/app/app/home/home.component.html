@@ -1,0 +1,19 @@
+<header>
+    <h1>LIST of USERS</h1>
+</header>
+<section>
+    <input class="search" type="text" placeholder="Search">
+    <button>Search</button>
+</section>
+<section>
+    <div>
+        <ul *ngFor="let obj of list">
+            <li>
+                <p>Name: {{obj.user.name.title}} {{obj.user.name.first}}</p>
+                <p>Gender: {{obj.user.gender}}</p>
+                <p>Email: {{obj.user.email}}</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
